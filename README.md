@@ -7,10 +7,13 @@ A First Tech Challenge Controls library to go along with https://www.ctrlaltftc.
 
 <h3>Installation Instructions</h1>
 <p>in build.dependencies.gradle Add jitpack into repositories</p>
+
 ```
 repositories {
     maven { url 'https://jitpack.io' }
-}```
+}
+```
+
 
 
 <p>Then add the dependency:</p>
