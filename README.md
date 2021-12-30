@@ -17,7 +17,7 @@ repositories {
 
 
 
-<p>Then add the dependency:</p>
+<p>Then add the dependency: </p>
 
 ```implementation 'com.github.Thermal-Equilibrium:homeostasis-FTC:1.0.1'```
 
