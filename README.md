@@ -1,3 +1,3 @@
 # homeostasis-FTC
 
-A library to go along with https://www.ctrlaltftc.com
+A First Tech Challenge Controls library to go along with https://www.ctrlaltftc.com
