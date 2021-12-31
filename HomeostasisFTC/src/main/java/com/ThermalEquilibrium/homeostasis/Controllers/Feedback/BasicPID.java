@@ -33,6 +33,7 @@ public class BasicPID implements FeedbackController {
 		double dt = getDT();
 		double error = calculateError(reference, state);
 		double derivative = calculateDerivative(error,dt);
+		integrate(error,dt);
 		previousError = error;
 		return error * coefficients.Kp
 					 + integralSum * coefficients.Ki
