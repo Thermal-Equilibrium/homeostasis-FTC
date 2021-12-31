@@ -1,13 +1,12 @@
 package com.ThermalEquilibrium.homeostasis.Filters.FilterAlgorithms;
 
 
-import android.os.Build;
 
 import com.ThermalEquilibrium.homeostasis.Utils.LinearRegression;
 import com.ThermalEquilibrium.homeostasis.Utils.SizedStack;
 
 
-public class KalmanFilter {
+public class KalmanFilter implements Filter {
 
 	protected double Q;
 	protected double R;
@@ -51,12 +50,15 @@ public class KalmanFilter {
 		return x;
 	}
 
+
+
 	/**
-	 * update the kalman filter for traditional; continous values.
+	 * update the kalman filter for traditional; continuous values.
 	 * @param measurement the current measurement
 	 * @return the optimal state estimate.
 	 */
-	public double update(double measurement) {
+	@Override
+	public double estimate(double measurement) {
 		regression.runLeastSquares();
 		x += regression.predictNextValue() - estimates.peek();
 		x += K * (measurement - x);
@@ -103,5 +105,6 @@ public class KalmanFilter {
 		}
 		return  newValues;
 	}
+
 
 }

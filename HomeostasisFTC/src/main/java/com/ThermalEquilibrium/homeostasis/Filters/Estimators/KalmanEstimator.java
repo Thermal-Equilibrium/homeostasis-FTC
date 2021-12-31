@@ -2,6 +2,8 @@ package com.ThermalEquilibrium.homeostasis.Filters.Estimators;
 
 
 
+import android.os.Build;
+
 import com.ThermalEquilibrium.homeostasis.Filters.FilterAlgorithms.KalmanFilter;
 
 import java.util.function.DoubleSupplier;
@@ -26,6 +28,6 @@ public class KalmanEstimator extends Estimator{
 
 	@Override
 	public double update() {
-		return kalmanFilter.update(measurement.getAsDouble());
+		return kalmanFilter.estimate(measurement.getAsDouble());
 	}
 }

@@ -6,8 +6,18 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
 
 public class Vector {
-	private double[] vec;
-	private int size;
+	private final double[] vec;
+	private final int size;
+
+	/**
+	 *
+	 * @param vec vector
+	 */
+	public Vector(double [] vec) {
+		this.size = vec.length;
+		this.vec = vec;
+	}
+
 	public Vector(int size) {
 		this.size = size;
 		this.vec = new double[size];
@@ -22,6 +32,7 @@ public class Vector {
 	public void set(double value, int index) {
 		vec[index] = value;
 	}
+
 
 	public double get(int index) {
 		return vec[index];
