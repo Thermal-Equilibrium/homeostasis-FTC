@@ -2,6 +2,8 @@
 
 A First Tech Challenge Controls library to go along with https://www.ctrlaltftc.com
 
+For documentation check out: https://www.ctrlaltftc.com/homeostasis-by-thermal-equilibrium/what-is-homeostasis
+
 [![](https://jitpack.io/v/Thermal-Equilibrium/homeostasis-FTC.svg)](https://jitpack.io/#Thermal-Equilibrium/homeostasis-FTC)
 
 
