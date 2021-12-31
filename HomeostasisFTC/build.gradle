@@ -1,14 +1,17 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
+
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 28
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 30
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
